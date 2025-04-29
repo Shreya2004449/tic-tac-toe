@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>look at the DOM</h1>
+    <p id="demo"></p>
+    <p id = "demo"></p>
+    <p id="p1"></p>
+    <p>bla bla bla</p>
+    <p id="p2">Hello Shreya</p>
+  
+    
+    <div>box</div>
+    <style>
+      div{
+        width: 300px;
+        height: 300px;
+        background-color: yellow;
+      }
+    </style>
+</body>
+<script>
+  document.getElementById('demo').innerHTML="hello shreya";
+
+  const element=document.getElementsByTagName("p");
+
+  document .getElementById("demo").innerHTML='the text first paragraph(index 0)is :'+element[0].innerHTML;
+
+  document.getElementById("p1").innerHTML="new text";
+
+  document.write(Date());
+
+
+  document.getElementById("p2").style.color="blue";
+
+  document.getElementById("p2").style.fontFamily="Arial";
+
+  document.getElementById("p2").style.fontSize ="larger";
+
+  let div = document.querySelector("div");
+
+  div.style.backgroundColor="green";
+
+  div.style.fontSize="60px";
+
+  div.innerHTML="hello";
+
+  
+
+
+</script>
+</html> 
